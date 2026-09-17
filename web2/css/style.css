@@ -1,0 +1,144 @@
+/* Color formats used: hex, name, rgb, hsl */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: hsl(0, 0%, 95%); /* HSL Format (Light gray) */
+    color: #111111; /* HEX Format */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-family: 'Times New Roman', Times, serif; /* Maximum two font families */
+    font-weight: normal;
+    text-align: center;
+    color: black; /* Color Name */
+}
+
+/* Box model demonstration (margin, padding, border) */
+main {
+    max-width: 800px;
+    margin: 2vw auto; 
+    padding: 2rem; /* REM Unit */
+    background-color: white;
+    border: 1px solid rgb(200, 200, 200); /* RGB Format */
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Unique ID Selector */
+#g-class-title {
+    color: rgb(50, 50, 50); 
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-bottom: 2px solid silver;
+    padding-bottom: 10px;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style-type: none;
+    background-color: #000000;
+    padding: 15px; /* PX Unit */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: silver;
+    text-decoration: none;
+    font-size: 1.1em; /* EM Unit */
+    padding: 8px 16px;
+    transition: all 0.4s ease;
+}
+
+/* Hover effect changing background, color, and border */
+nav a:hover {
+    color: white;
+    background-color: rgb(50, 50, 50);
+    border: 1px solid silver;
+    border-radius: 3px;
+}
+
+nav a.active {
+    font-weight: bold;
+    border-bottom: 2px solid silver;
+}
+
+/* Table Styling */
+table {
+    width: 100%; /* Percentage Unit */
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #222222;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: hsl(0, 0%, 98%); /* Readable rows */
+}
+
+/* Form Styling */
+fieldset {
+    border: 2px solid #222222;
+    padding: 20px;
+    background-color: #fcfcfc;
+}
+
+input[type="text"], input[type="email"], input[type="date"], textarea {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+/* Visible focus state for accessibility */
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #222222;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+button {
+    background-color: #222222;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+button:hover {
+    background-color: silver;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+}
+
+/* Footer using VH unit */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #000000;
+    color: silver;
+    min-height: 5vh; /* VH Unit */
+}
